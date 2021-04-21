@@ -5,7 +5,16 @@
         <title>Minha página</title>
         <script type="text/javascript" src="js/main.js"></script>
     </head>
-    <body>
+    <body onload="carrega()">
         <h1>Minha página</h1>
+        <button type="button" onclick="botao()">Botão aleatório</button>
+        <p onclick="redireciona()" id="agradecimento"></p>
+        <p id="over" onmouseover="troca(this)" onmouseout="volta(this)">Passe o mouse aqui</p>
+        <p id="over-2" onmouseover="troca(this)" onmouseout="volta(this)">Passe o mouse aqui</p>
+        <select onchange="muda(this)">
+            <option value="1">Valor 1</option>
+            <option value="2">Valor 2</option>
+            <option value="3">Valor 3</option>
+        </select>
     </body>
 </html>
